@@ -119,7 +119,6 @@ async function run() {
                 //     res.json(result)
                 // })
 
-
     }
 
     finally {
@@ -130,13 +129,9 @@ async function run() {
 run().catch(console.dir);
 
 app.get('/', (req, res) => {
-    res.send('Running Genius Server');
+    res.send('Running Bongo Travel Server');
 });
 
-app.get('/hello', (req, res) => {
-    res.send('hello updated here')
-})
-
 app.listen(port, () => {
-    console.log('Running Genius Server on port', port);
+    console.log('Running Bongo Travel Server on Port', port);
 })
